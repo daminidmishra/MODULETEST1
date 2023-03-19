@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rockpaperscissorgame</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+    <div class="container">
+        <div class="header">
+            <div class="textpart">ROCK <BR> PAPER <BR> SCISSORS </div>
+            <div class="scoreboard">
+                <div class="comp">
+                    <h10 class="compscore">COMPUTER <br> SCORE</h10>
+                    <h1 id="compcounter"></h1>
+                </div>
+                <div class="user"> 
+                    <h10 class="userscore">YOUR <br> SCORE</h10>
+                    <h1 id="usercounter"></h1>
+                </div>
+            </div>
+        </div>
+        <div id="middle">
+            <!-- userwin -->
+            <!-- <div class="result">
+                <div class="box1">
+                    <h2 class="text">YOU PICKED</h2>
+                    <div class="outercircle">
+                        <div class="middlecircle">
+                            <div class="innercircle">
+                                <button class="option" id="winnerrock"> <img src="rock.png"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box2">
+                    <h1>YOU WIN</h1>
+                    <h2>AGAINST PC</h2> <br>  <br>
+                    <button class="playagain" onclick="replayGame()">PLAY AGAIN</button> 
+                </div>
+                <div class="box3">
+                    <h2 class="text1">PC PICKED</h2>
+                    <button class="option" id="loserscissor" onclick="game()"> <img src="scissor.png"></button>
+                </div>  
+                <button class="next">NEXT</button> 
+            </div>
+        <button id="rulepopup" onclick="openRules()">RULES</button> -->
+
+<!-- 
+        <div class="result">
+            <div class="box1">
+                <h2 class="text">YOU PICKED</h2>
+                <div class="outercircle">
+                    <div class="middlecircle">
+                        <div class="innercircle">
+                            <button class="option" id="winnerpaper" onclick="game()"> <img src="paper.png"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box2">
+                <h1>YOU WIN</h1>
+                <h2>AGAINST PC</h2> <br>  <br>
+                <button class="playagain" onclick="replayGame()">PLAY AGAIN</button>
+            </div>
+            <div class="box3">
+                <h2 class="text1">PC PICKED</h2>
+                <button class="option" id="loserrock" onclick="game()"> <img src="rock.png"></button>
+            </div>  
+            <a href="win.html"><button class="next">NEXT</button> </a>
+        </div>
+        <button id="rulepopup" onclick="openRules()">RULES</button> -->
+
+
+        <!-- <div class="result">
+            <div class="box1">
+                <h2 class="text">YOU PICKED</h2>
+                <div class="outercircle">
+                    <div class="middlecircle">
+                        <div class="innercircle">
+                            <button class="option" id="winnerscissor" onclick="game()"> <img src="scissor.png"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box2">
+                <h1>YOU WIN</h1>
+                <h2>AGAINST PC</h2> <br>  <br>
+                <button class="playagain" onclick="replayGame()">PLAY AGAIN</button>
+            </div>
+            <div class="box3">
+                <h2 class="text1">PC PICKED</h2>
+                <button class="option" id="loserpaper" onclick="game()"> <img src="paper.png"></button>
+            </div>  
+            <a href="win.html"><button class="next">NEXT</button> </a>
+        </div>
+        <button id="rulepopup" onclick="openRules()">RULES</button> -->
+            <!-- pcwins -->
+            <!-- <div class="result">
+                <div class="box1">
+                    <h2 class="text2">YOU PICKED</h2>
+                    <button class="option" id="loserrock" onclick="game()"> <img src="rock.png"></button>
+                </div>
+                <div class="box2">
+                    <h1>YOU LOSE</h1>
+                    <h2>AGAINST PC</h2> <br>  <br>
+                    <button class="playagain" onclick="replayGame()">PLAY AGAIN</button> 
+                </div>
+                <div class="box3">
+                    <h2 class="text3">PC PICKED</h2>
+                    <div class="outercircle">
+                        <div class="middlecircle">
+                            <div class="innercircle">
+                                <button class="option" id="winnerscissor" onclick="game()"> <img src="scissor.png"></button>                              
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>  
+                
+            </div>
+            <button id="rulepopup" onclick="openRules()">RULES</button> -->
+
+
+            <!-- tie -->
+            <!-- <div class="result">
+                <div class="box1">
+                    <h2 class="text2">YOU PICKED</h2>
+                    <button class="option" id="tierock" onclick="game()"> <img src="rock.png"></button>
+                </div>
+                <div class="box2">
+                    <h1>TIE UP</h1>
+                    
+                    <button class="playagain" onclick="replayGame()">REPLAY</button> 
+                </div>
+                <div class="box3">
+                    <h2 class="text1">PC PICKED</h2>
+                    <button class="option" id="tierock" onclick="game()"> <img src="rock.png"></button>                     
+                </div>                  
+            </div>
+            </div
+            <button id="rulepopup" onclick="openRules()">RULES</button>> -->
+
+            <!-- standing page -->
+            <div class="choose">
+                <button class="option" id="rock" onclick="game()"><img src="rock.png"></button> 
+                <button class="option" id="paper" onclick="game()"><img src="paper.png"></button> 
+                <button class="option" id="scissor" onclick="game()"><img src="scissor.png"></button> 
+                <img id="l1" src="line1.png"> 
+                <img id="l2" src="line2.png">
+                <img id="l3" src="line3.png">
+            </div>
+            <div id="footer">
+                <div id="rules">
+                    <div id="instructions">
+                        <h1 class="gamerules">GAME RULES</h1>
+                        <ul class="ruleslist">
+                            <li class="r1">Rock beats scissors, scissors beat paper, and paper beats rock.</li><br>
+                            <li class="r1">Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li><br>
+                            <li class="r1">Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li><br>
+                            <li class="r1">If both players lay down the same hand, each player lays down another hand</li>
+                        </ul>
+                        <button class="x" onclick="closeRules()"><img class="x2" src="X.png"></button>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <button id="rulepopup" onclick="openRules()">RULES</button>
+        </div>    
+    </div>
+    <script src="script.js"></script>    
+</body>
+</html>
+
+<!--  -->
